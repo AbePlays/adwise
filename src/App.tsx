@@ -31,18 +31,30 @@ const App: Component = () => {
   return (
     <div class="bg-[#1f2632] min-h-screen flex justify-center items-center p-4">
       <main class="bg-[#323a49] rounded-2xl text-[#cee3e9] p-8 text-center space-y-8 relative max-w-lg mx-auto">
-        <h1 class="text-[#52ffa8] uppercase tracking-[4px] text-sm">
-          Advice #{advice()?.id}
-        </h1>
-        <p class="font-bold text-2xl leading-8">"{advice()?.advice}"</p>
-        <img src={pattern} alt="" />
+        {!advice.loading && !advice()?.advice ? (
+          <p class="text-red-400">
+            Some error occured. Please try generating a new advice
+          </p>
+        ) : (
+          <>
+            <h1 class="text-[#52ffa8] uppercase tracking-[4px] text-sm">
+              Advice #{advice()?.id}
+            </h1>
+            <p class="font-bold text-2xl leading-8">"{advice()?.advice}"</p>
+            <img src={pattern} alt="" />
+          </>
+        )}
         <form onSubmit={submitHandler}>
           <button
             aria-label="Generate Random Advice"
             class="bg-[#52ffa8] h-16 w-16 rounded-full absolute -bottom-8 left-0 right-0 mx-auto flex justify-center items-center"
             disabled={advice.loading}
           >
-            <img src={dice} alt="" />
+            <img
+              class={`${advice.loading ? "animate-spin" : ""}`.trim()}
+              src={dice}
+              alt=""
+            />
           </button>
         </form>
       </main>
