@@ -888,9 +888,9 @@ semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
 
-solid-js@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.6.1.tgz#1b6cd94151a859d9c186a1a3a61e99234a567c77"
+solid-js@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.6.2.tgz#0030960cf697b3cad0cc9046f4e9388dcd2bc7d2"
   dependencies:
     csstype "^3.1.0"
 
