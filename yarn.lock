@@ -984,9 +984,9 @@ vite-plugin-solid@^2.4.0:
     solid-refresh "^0.4.1"
     vitefu "^0.1.1"
 
-vite@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-3.2.2.tgz#280762bfaf47bcea1d12698427331c0009ac7c1f"
+vite@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-3.2.4.tgz#d8c7892dd4268064e04fffbe7d866207dd24166e"
   dependencies:
     esbuild "^0.15.9"
     postcss "^8.4.18"
