@@ -1042,9 +1042,9 @@ seroval@^0.5.0:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/seroval/-/seroval-0.5.1.tgz#e6d17365cdaaae7e50815c7e0bcd7102facdadf3"
 
-solid-js@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.7.0.tgz#afa0a427a53bae782d2f9d52a4d828bb208865a4"
+solid-js@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.7.3.tgz#3e2e2ce7f2415336f5c96668f9524ad51f6a718b"
   dependencies:
     csstype "^3.1.0"
     seroval "^0.5.0"
