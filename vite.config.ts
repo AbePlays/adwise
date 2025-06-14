@@ -1,9 +1,10 @@
-import { defineConfig } from 'vite'
-import solidPlugin from 'vite-plugin-solid'
+import { defineConfig } from "vite";
+import solidPlugin from "vite-plugin-solid";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [solidPlugin()],
-  build: {
-    target: 'esnext',
-  },
-})
+	plugins: [tailwindcss(), solidPlugin()],
+	build: {
+		target: "esnext",
+	},
+});
